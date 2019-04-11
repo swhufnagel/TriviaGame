@@ -1,0 +1,110 @@
+@font-face { font-family: nfl1; src: url('Freshman.ttf'); } 
+      .nfl {
+         font-family: nfl1;
+         text-shadow: 3px 3px black;
+      }
+@font-face{font-family: nflred; src: url('NFLRedZone.ttf'); }  
+      .startGame{
+        font-family: nflred;
+      }
+      @font-face{font-family: EASports; src: url('EASports.ttf'); }  
+      .question{
+        font-family: EASports;
+        text-shadow: 3px 3px black;
+        box-shadow: 5px 10px black;
+      }
+      .back{
+          background-color: #013369;
+      }
+      body{
+          color:white;
+          background: #013369;
+      }
+      .startGame{
+            background-color: #013369; /*for compatibility with older browsers*/
+            background-image: linear-gradient(#013369,#3f6894);
+    position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+    color: #fff;
+    text-shadow: 3px 3px black;
+    -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+      }
+      .startGame:before{
+        content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255, 255, 255, 0));
+    -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.9s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+    }
+    .startGame:hover{
+        background-color: silver; /*for compatibility with older browsers*/
+            background-image: linear-gradient(#414141,#9c9c9c);
+    position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+    color: black;
+    text-shadow: 3px 2px white;
+      }
+    .startGame:hover:after{
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: 50%;
+        background: linear-gradient(rgba(221, 221, 221, 0.87), rgba(255, 255, 255, 0));
+    }
+    .startGame:hover:before{
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    }
+.hide{
+    display:none;
+}
+.question{
+    border: 1px red solid;
+    outline: 3px solid #013369;
+
+}
+.question:hover{
+    box-shadow: 6px 12px black;
+}
+.logo{
+    height: 220px;
+    width: 280px;
+}
+.borders {
+    border: 5px solid white; 
+    outline: 5px solid red;
+    border-radius: 1%;
+  }
+  .noborder{
+      border: 0px solid white;
+      background-color: transparent;
+  }
+.pics{
+    height:200px;
+    width:200px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grey{
+    background-color:rgba(128, 128, 128, 0.349);
+}
