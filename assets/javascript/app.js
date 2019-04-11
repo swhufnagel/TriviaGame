@@ -20,64 +20,63 @@ var questions = [{
     C: "Shaun Alexander",
     D: "Jerry Rice",
     F: "He scored 208 touchdowns in his career!"
+}, {
+    Q: "Which team has the most Super Bowl rings?",
+    A: "New England Patriots",
+    B: "Pittsburgh Steelers",
+    C: "Dallas Cowboys",
+    D: "San Francisco 49ers",
+    F: "They have won 6 rings! Ben Roethlisberger has won two Super Bowls with the Steelers, while Terry Bradshaw won four."
+}, {
+    Q: "Out of these teams who has been to the Super Bowl",
+    A: "Cleveland Browns",
+    B: "Kansas City Chiefs",
+    C: "Detroit Lions",
+    D: "Jacksonville Jaguars",
+    F: "They lost in the first ever Super Bowl against the Green Bay Packers"
+}, {
+    Q: "Which NFL team has the most Hall-of-Famers?",
+    A: "Chicago Bears",
+    B: "Oakland Raiders",
+    C: "Dallas Cowboys",
+    D: "Philadelphia Eagles",
+    F: "They have had 33 Hall of Fame players!"
+}, {
+    Q: "Who was the youngest player to win the MVP award?",
+    A: "Dan Marino",
+    B: "Walter Payton",
+    C: "Jim Brown",
+    D: "Patrick Mahomes",
+    F: "He won at age 21 and 22!"
+}, {
+    Q: "Who has the most rushing touchdowns in a season?",
+    A: "Ladanian Tomlinson",
+    B: "Priest Holmes",
+    C: "Shaun Alexander",
+    D: "Marshhall Faulk",
+    F: "He set the record at 28 in 2006!"
+}, {
+    Q: "The NFL was founded as the American Professional Football Association in 1920 with 10 teams. Out of the following teams which was included in the original 10 charter teams?",
+    A: "Green Bay Packers",
+    B: "Houston Oilers",
+    C: "Arizona Cardinals",
+    D: "Dallas Cowboys",
+    F: "They were originially know as the Racine Cardinals!"
+}, {
+    Q: "Which player has the longest streak of games with a touchdown pass?",
+    A: "Tom Brady",
+    B: "Donovan Mcnabb",
+    C: "Joe Namath",
+    D: "Johnny Unitas",
+    F: "He went 47 straight games with a touchdown pass!"
+}, {
+    Q: "Which NFL team has the best all time Win-Loss record?",
+    A: "New England Patriots",
+    B: "Dallas Cowboys",
+    C: "Green Bay Packers",
+    D: "Miami Dolphins",
+    F: "They have an all-time record of (512-380)!"
 }
-// }, {
-//     Q: "Which team has the most Super Bowl rings?",
-//     A: "New England Patriots",
-//     B: "Pittsburgh Steelers",
-//     C: "Dallas Cowboys",
-//     D: "San Francisco 49ers",
-//     F: "They have won 6 rings! Ben Roethlisberger has won two Super Bowls with the Steelers, while Terry Bradshaw won four."
-// }, {
-//     Q: "Out of these teams who has been to the Super Bowl",
-//     A: "Cleveland Browns",
-//     B: "Kansas City Chiefs",
-//     C: "Detroit Lions",
-//     D: "Jacksonville Jaguars",
-//     F: "They lost in the first ever Super Bowl against the Green Bay Packers"
-// }, {
-//     Q: "Which NFL team has the most Hall-of-Famers?",
-//     A: "Chicago Bears",
-//     B: "Oakland Raiders",
-//     C: "Dallas Cowboys",
-//     D: "Philadelphia Eagles",
-//     F: "They have had 33 Hall of Fame players!"
-// }, {
-//     Q: "Who was the youngest player to win the MVP award?",
-//     A: "Dan Marino",
-//     B: "Walter Payton",
-//     C: "Jim Brown",
-//     D: "Patrick Mahomes",
-//     F: "He won at age 21 and 22!"
-// }, {
-//     Q: "Who has the most rushing touchdowns in a season?",
-//     A: "Ladanian Tomlinson",
-//     B: "Priest Holmes",
-//     C: "Shaun Alexander",
-//     D: "Marshhall Faulk",
-//     F: "He set the record at 28 in 2006!"
-// }, {
-//     Q: "The NFL was founded as the American Professional Football Association in 1920 with 10 teams. Out of the following teams which was included in the original 10 charter teams?",
-//     A: "Green Bay Packers",
-//     B: "Houston Oilers",
-//     C: "Arizona Cardinals",
-//     D: "Dallas Cowboys",
-//     F: "They were originially know as the Racine Cardinals!"
-// }, {
-//     Q: "Which player has the longest streak of games with a touchdown pass?",
-//     A: "Tom Brady",
-//     B: "Donovan Mcnabb",
-//     C: "Joe Namath",
-//     D: "Johnny Unitas",
-//     F: "He went 47 straight games with a touchdown pass!"
-// }, {
-//     Q: "Which NFL team has the best all time Win-Loss record?",
-//     A: "New England Patriots",
-//     B: "Dallas Cowboys",
-//     C: "Green Bay Packers",
-//     D: "Miami Dolphins",
-//     F: "They have an all-time record of (512-380)!"
-// }
 ];
 var score = {
     right: 0,
