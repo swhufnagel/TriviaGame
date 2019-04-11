@@ -7,12 +7,17 @@
       .startGame{
         font-family: nflred;
       }
-      @font-face{font-family: EASports; src: url('EASports.ttf'); }  
+@font-face{font-family: EASports; src: url('EASports.ttf'); }  
       .question{
         font-family: EASports;
         text-shadow: 3px 3px black;
         box-shadow: 5px 10px black;
       }
+@font-face{font-family: Varsity; src: url('Sportscenter.ttf'); }  
+      .card-text{
+          font-family: Varsity;
+          text-shadow: 2px 2px black;
+      }  
       .back{
           background-color: #013369;
       }
@@ -80,6 +85,7 @@
 .question{
     border: 1px red solid;
     outline: 3px solid #013369;
+    box-shadow: 5px 8px black;
 
 }
 .question:hover{
@@ -106,5 +112,17 @@
     margin-right: auto;
 }
 .grey{
-    background-color:rgba(128, 128, 128, 0.349);
+    background-image: linear-gradient(#174372, rgba(128, 128, 128, 0.363));
+    background-color:rgba(238, 110, 110, 0.363);
+}
+.timer{
+    text-align: center;
+    border: 2px solid red;
+    max-width: 30px;
+    box-shadow: 5px 8px black;
+    outline: 2px #013369 solid;
+
+}
+.card-body{
+    box-shadow: 5px 10px red;
 }

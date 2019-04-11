@@ -61,7 +61,7 @@ var questions = [{
     B: "Houston Oilers",
     C: "Arizona Cardinals",
     D: "Dallas Cowboys",
-    F: "They were originially know at the Racine Cardinals!"
+    F: "They were originially know as the Racine Cardinals!"
 }, {
     Q: "Which player has the longest streak of games with a touchdown pass?",
     A: "Tom Brady",
@@ -98,6 +98,7 @@ function reset() {
     score.right = 0;
     score.wrong = 0;
     score.unanswer = 0;
+    qNumber = 0;
     timer = 15;
 }
 //function to run timer
@@ -107,7 +108,9 @@ function setTime() {
         timer--;
         $('.timer').html(timer.toString());
     }
-    else if(qNumber < questions.length) {
+    else if(qNumber < questions.length-1) {
+        var answers = [questions[qNumber].C, questions[qNumber].B, questions[qNumber].D, questions[qNumber].B, questions[qNumber].B, questions[qNumber].A, questions[qNumber].C, questions[qNumber].A, questions[qNumber].C, questions[qNumber].D, questions[qNumber].B];
+        answer = answers[qNumber];
         $('.card-title').empty();
         $('.card-text').empty();
         $(".pics").removeClass("hide");
@@ -121,7 +124,7 @@ function setTime() {
         timer = 15;
         score.unanswer++;
     }
-    else if(qNumber > questions.length){ 
+    else if(qNumber > questions.length-1){ 
         $('.card-title').empty();
         $('.card-text').empty();
         $(".pics").addClass("hide");
@@ -134,14 +137,18 @@ function setTime() {
         $('.timer').addClass("hide");
         $('#start').removeClass("hide");
         button.text("Play Again");
+        button.addClass("Reset");
+        $('.Reset').on("click",function(){
+            reset();
 
+        })
         $('#start').removeClass("hide");
     }
 }
 //function to set the question up
 function setQuestion() {
     console.log(qNumber);
-    if (qNumber <= questions.length) {
+    if (qNumber <= questions.length-1) {
         console.log("qnum: " + qNumber);
         qNumber++;
         timer = 15;
